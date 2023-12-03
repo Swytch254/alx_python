@@ -7,5 +7,3 @@ def reverse_string(string):
     # return string 
 
     # return "".join(reversed(string))
-
-print(reverse_string("hello world"))
