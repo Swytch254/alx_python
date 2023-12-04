@@ -9,6 +9,6 @@ def fibonacci_sequence(n):
     else:
         sequence.extend([0,1])
         for char in range(2,n):
-            next_number = sequence[char-1] + sequence[char-2]
-            sequence.append(next_number)
+            next_digit = sequence[char-1] + sequence[char-2]
+            sequence.append(next_digit)
     return sequence
