@@ -1,6 +1,6 @@
 def main():
-    a = 2
-    b = 1
+    a = int(input())
+    b = int(input())
     safe_print_division(a,b)
 
 def safe_print_division(a,b):
@@ -14,4 +14,3 @@ def safe_print_division(a,b):
         
 if __name__ == "__main__":
     main()
-    
