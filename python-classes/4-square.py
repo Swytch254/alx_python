@@ -59,4 +59,12 @@ class Square:
         """
         if self.size == 0:
             print()
-            print()
+        else:
+            square=self.area()
+            line = 0
+            while line < square:
+                for char in range(square):
+                    print("#",end = '')
+                print()
+                line += 1
+                
