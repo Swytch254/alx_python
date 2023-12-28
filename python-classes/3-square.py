@@ -22,33 +22,32 @@ class Square:
         self.size = size
 
 
-        @property
-        def size(self):
-            """
-                A getter function for the Square class that has the size attribute
-            """
-            return self.__size
-        
+    @property
+    def size(self):
+        """
+            A getter function for the Square class that has the size attribute
+        """
+        return self.__size
+    
 
-        @size.setter
-        def size(self, value):
-            """
-                A setter function for getting the value of size
-            """
-            if type(value) != int:
-                raise TypeError("size must be an integer")
-            elif value < 0:
-                raise ValueError("size must be >= 0")
-            self.__size = value 
+    @size.setter
+    def size(self, value):
+        """
+            A setter function for getting the value of size
+        """
+        if not isinstance(value,int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value 
 
 
     def area(self):
         """
             A function to square the size
         """
-        if type(self.size) != int:
+        if not isinstance(self.size,int):
             raise TypeError("size must be an integer")
         elif self.size < 0:
             raise ValueError("size must be >= 0")
         return self.size * self.size
-    
