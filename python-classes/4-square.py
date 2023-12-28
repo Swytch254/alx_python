@@ -60,11 +60,9 @@ class Square:
         if self.size == 0:
             print()
         else:
-            square=self.area()
             line = 0
-            while line < square:
-                for char in range(square):
+            while line < self.size:
+                for char in range(self.size):
                     print("#",end = '')
                 print()
                 line += 1
-                
